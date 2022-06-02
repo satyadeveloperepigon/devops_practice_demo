@@ -1,0 +1,71 @@
+###################### Devops Introduction ###########################
+
+Devops is a software methodolgy which imporves collabration between developers and Operation team using various automation tools.
+The automation tools are used in various stages of devops cycle.
+
+Devops Lifecycle
+
+1.Continuous Development -> Plan -> Code
+2.Continuous Integration
+3.Continuous Deployment -> Release -> Deploy
+4.Continuous Testing -> Bild -> Test
+5.Continuous Monitoring -> operate -> Monitoring 
+
+How Devops Work
+
+Continuous Development-> Version Control git -> Continuous Integration -> Continuous Deployment -> Continuous Integration -> Continuous Monitoring
+
+Continuous Development this stage involves commiting code to version control like (git,svn etc) for maintaining  the different versions of code
+tools line ant,maven,gradle for building and packing the code into excutable file.
+
+Continuous Integration is critical point in whole devops lifecycle.It deals with integration at differnt stages of devops lifecycle.
+
+Continuous Development tool github
+Continuous Integration tool Jenkins
+Continuous Deployment  tool Docker,puppet,Ansible
+Continuous Testing tool selenium
+Continuous Monitoring  tool Nagios
+
+######################## Github and Git #############################
+
+1. To install git in linux ubuntu 
+
+   sudo apt update
+   sudo apt install git
+   git --version
+
+2. To create git account
+
+   git config --global user.name "Your Name"
+   git config --global user.email "youremail@domain.com"
+   
+3.Init Git
+  
+   git init
+   
+4. Commit to git
+
+   git commit -m "message"
+
+5. To add files to git  
+
+   git add <filenames> (or) <directory>
+
+6. Create repositiory and add repositiory to origin
+   
+   git remote add origin "url of git repositiory"
+   
+
+satyadeveloperepigon
+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
+
+touch README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:alexpchin/<reponame>.git
+git push -u origin master
+##Push an existing repository from the command line
+
+git remote add origin git@github.com:alexpchin/<reponame>.git
+git push -u origin master
